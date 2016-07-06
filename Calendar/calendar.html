@@ -8,82 +8,113 @@
 <link rel="stylesheet" type="text/css" href="calendar.css">
 
 <body>
-    <div class="calendar-head">
-        <div id="back" class="back">
-            <</div>
-                <div>
-                    <select></select>
-                    <label>年</label>
-                </div>
-                <div>
-                    <select></select>
-                    <label>月</label>
-                </div>
-                <div id="forward" class="forward">></div>
+    <div class="calendar-container">
+        <div class="calendar-head">
+            <div id="back" class="back">
+                <</div>
+                    <div class="inline-form">
+                        <select id="year"></select>
+                        <label>年</label>
+                    </div>
+                    <div class="inline-form">
+                        <select id="month">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                        </select>
+                        <label>月</label>
+                    </div>
+                    <div id="forward" class="forward">></div>
+            </div>
+            <table id="calendarTable" class="calendar-table">
+                <caption>日历</caption>
+                <col>
+                <col>
+                <col>
+                <col>
+                <col>
+                <col>
+                <col>
+                <thead>
+                    <tr>
+                        <th class="weekend">日</th>
+                        <th>一</th>
+                        <th>二</th>
+                        <th>三</th>
+                        <th>四</th>
+                        <th>五</th>
+                        <th class="weekend">六</th>
+                    </tr>
+                </thead>
+                <tbody id="calendarBody">
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                                        <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+                <tfoot></tfoot>
+            </table>
+            <script type="text/javascript" src='calendar.js'></script>
         </div>
-        <table id="calendarTable">
-            <caption>日历</caption>
-            <thead>
-                <tr>
-                    <th class="weekend">日</th>
-                    <th>一</th>
-                    <th>二</th>
-                    <th>三</th>
-                    <th>四</th>
-                    <th>五</th>
-                    <th class="weekend">六</th>
-                </tr>
-            </thead>
-            <tbody id="calendarBody">
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-            </tbody>
-            <tfoot></tfoot>
-        </table>
-        <script type="text/javascript" src='calendar.js'></script>
 </body>
 
 </html>

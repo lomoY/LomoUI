@@ -1,8 +1,38 @@
+.calendar-container{
+    width: 400px;
+}
+.calendar-table {
+    border-collapse: collapse;
+    font-family: "Helvetica Neue", Helvetica, Microsoft Yahei, Hiragino Sans GB, WenQuanYi Micro Hei, sans-serif;
+}
+.calendar-table col{
+    text-align: right;
+}
+.calendar-head{
+    position: relative;
+}
+.calendar-head .back{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+.calendar-head .forward{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+.calendar-head .inline-form{
+    display: inline-block;
+}
+.calendar-head .inline-form select{
+    width: 60px;
+}
 .weekend {
     color: red;
 }
 
 table td {
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #ddd;
+    width: 40px;
+    height: 40px;
 }
-
